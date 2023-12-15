@@ -1,0 +1,295 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMPX/PQzCOT8W7T4rrc71Sb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/fmauriccio/usando_colllab/blob/main/Arquivos%20em%20Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Variaveis\n"
+      ],
+      "metadata": {
+        "id": "PcVcSZ-1k4G1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = False\n",
+        "print(numero)\n",
+        "print(type(numero))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Kc33qD-hk8_v",
+        "outputId": "bf32c4b6-7f5e-4950-f803-1a9d8fc2e6d4"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "<class 'bool'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Tipos de Dados"
+      ],
+      "metadata": {
+        "id": "KfNg6jTKlvhe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bebidaFavorita =  \"Coca-Cola\"\n",
+        "print(bebidaFavorita)\n",
+        "print(type(bebidaFavorita))\n",
+        "\n",
+        "bebidaPreco = 5.00\n",
+        "print(bebidaPreco)\n",
+        "print(type(bebidaPreco))\n",
+        "\n",
+        "alcoolica = False\n",
+        "print(alcoolica)\n",
+        "print(type(alcoolica))\n",
+        "\n",
+        "print(\"Minha bebida favorita é \" , bebidaFavorita + \" e ela custa apenas R$\" , bebidaPreco , \" e não é alcoolica, se você fizesse uma afirmação para \\n um computador, esperando um True ou False, ele diria, é \", alcoolica ,  \" apesar de não fazer muito bem a saúde!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EV9vmZ3zlyOT",
+        "outputId": "9cd03cae-01f2-47e3-c788-d6547684acf2"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Coca-Cola\n",
+            "<class 'str'>\n",
+            "5.0\n",
+            "<class 'float'>\n",
+            "False\n",
+            "<class 'bool'>\n",
+            "Minha bebida favorita é  Coca-Cola e ela custa apenas R$ 5.0  e não é alcoolica, se você fizesse uma afirmação para \n",
+            " um computador, esperando um True ou False, ele diria, é  False  apesar de não fazer muito bem a saúde!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "almocoFavorito =  \"Macarronada\"\n",
+        "almocoPreco = 35.00\n",
+        "orcamento = 50.00\n",
+        "\n",
+        "print(bebidaPreco + almocoPreco)\n",
+        "total = bebidaPreco + almocoPreco\n",
+        "\n",
+        "print(total)\n",
+        "\n",
+        "print(orcamento - total)\n",
+        "\n",
+        "print(f\"Meu orçamento é de: {orcamento} reais\")\n",
+        "print(f\"E o valor total do que consumi foi de: {total} reais\")\n",
+        "\n",
+        "print(f\"Só  que eu convidei o Juan, o Carlos e o Ramon para jantarem comigo, sendo que cada um ia pagar o seu (rsrsrs), mas 2 deles não consumiram igual a mim.\")\n",
+        "\n",
+        "totalJuan = total\n",
+        "totalCarlos = (bebidaPreco * 2) + almocoPreco\n",
+        "totalRamon = (almocoPreco * 2) + (bebidaPreco * 3)\n",
+        "\n",
+        "print(f\"Juan, ficou com um total igual a mim, de: {totalJuan}, já Carlos que só come bebendo, ficou com um total de: {totalCarlos} porque pegou duas bebidas, e o Ramon, \\nsempre falamos que é o que mais come e bebe, esse ficou ocm um total de: {totalRamon}, ele comeu e repitiu e claro, pediu 3 bebidas!\")\n",
+        "\n",
+        "print(f\"Assim, ficou o total de cada um assim: \\nJuan: {totalJuan} \\nCarlos: {totalCarlos} \\nRamon: {totalRamon} \\nE eu com: {total}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aDgA93zWs3BU",
+        "outputId": "3f2a12e4-42fc-437f-f665-e2075aad21c7"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "40.0\n",
+            "40.0\n",
+            "10.0\n",
+            "Meu orçamento é de: 50.0 reais\n",
+            "E o valor total do que consumi foi de: 40.0 reais\n",
+            "Só  que eu convidei o Juan, o Carlos e o Ramon para jantarem comigo, sendo que cada um ia pagar o seu (rsrsrs), mas 2 deles não consumiram igual a mim.\n",
+            "Juan, ficou com um total igual a mim, de: 40.0, já Carlos que só come bebendo, ficou com um total de: 45.0 porque pegou duas bebidas, e o Ramon, \n",
+            "sempre falamos que é o que mais come e bebe, esse ficou ocm um total de: 85.0, ele comeu e repitiu e claro, pediu 3 bebidas!\n",
+            "Assim, ficou o total de cada um assim: \n",
+            "Juan: 40.0 \n",
+            "Carlos: 45.0 \n",
+            "Ramon: 85.0 \n",
+            "E eu com: 40.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sobremesaFavorita = \"Pudin\"\n",
+        "sobremesaPreco = 15.00\n",
+        "convidados = 4\n",
+        "\n",
+        "total2 = (almocoPreco * 4) + (bebidaPreco * 3) + (sobremesaPreco * 2)\n",
+        "\n",
+        "print(total2)\n",
+        "\n",
+        "totalPorPessoa = total2 / convidados\n",
+        "print(totalPorPessoa)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FJ8CYgTiyMPp",
+        "outputId": "121419ee-123d-450a-96a0-14ea550cde3f"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "185.0\n",
+            "46.25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Estruturas Condicionais"
+      ],
+      "metadata": {
+        "id": "GPjmLB4qzBGh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if(orcamento >= totalPorPessoa):\n",
+        "  print(\"Vamos dividir a conta!!! (Carinha feliz)\")\n",
+        "else:\n",
+        "  print(\"Lascou, vou ter que lavar a louça!!! (Carinha triste)\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DIV43pcCzHxR",
+        "outputId": "26cc14d5-4b18-4e78-d240-9b37647dca2d"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Vamos dividir a conta!!! (Carinha feliz)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if(orcamento <= totalPorPessoa * 2):\n",
+        "  print(\"Cartão não passou, Carlos paga!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "--xuUAdX0r0Z",
+        "outputId": "4d071a05-e97b-4f48-b09b-678285fe0477"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Cartão não passou, Carlos paga!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bomAmigo = True\n",
+        "\n",
+        "if(orcamento >= totalPorPessoa):\n",
+        "  print(\"Vamos dividir a conta.\")\n",
+        "elif(bomAmigo == true):\n",
+        "  print(\"Ufa, meu amigo me salvou!\")\n",
+        "else:\n",
+        "  print(\"Vou mesmo ter que lavar os pratos\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "deGL5_WK24uZ",
+        "outputId": "9e869fdd-a796-4089-8a17-a94f17c4a98f"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Vamos dividir a conta.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
